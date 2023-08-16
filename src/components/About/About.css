@@ -1,0 +1,105 @@
+.meSection {
+    margin: 0;
+    height: 100vh;
+    /* background-image: url('../images/hhholographic.webp'); */
+    /* background-color: #E8E8E8; */
+  }
+  
+  .meSection h1 {
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    font-size: 3vh;
+    /* margin-top: 12vh; */
+  }
+  
+  .meSection img {
+    display: flex;
+    height: 60vh;
+    margin-left: auto; /* Adjusted to center the image */
+    margin-right: auto; /* Adjusted to center the image */
+    margin-bottom: 12vh;
+    margin-top: 13vh;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .meSection button {
+    position: relative;
+    height: 50px;
+    padding: 0 30px;
+    border: 2px solid #000;
+    /* //background: #e8e8e8; */
+    user-select: none;
+    white-space: nowrap;
+    transition: all .05s linear;
+    font-family: inherit;
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
+    margin-top: 4vh;
+  }
+  
+  .meSection button:before, .meSection button:after {
+    content: "";
+    position: absolute;
+    /* background: #e8e8e8; */
+    transition: all .2s linear;
+  }
+  
+  .meSection  button:before {
+    width: calc(100% + 6px);
+    height: calc(100% - 16px);
+    top: 8px;
+    left: -3px;
+  }
+  
+  .meSection  button:after {
+    width: calc(100% - 16px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: 8px;
+  }
+  
+  .meSection button:hover {
+    cursor: pointer;
+  }
+  
+  .meSection button:active {
+    transform: scale(0.95);
+  }
+  
+  .meSection  button:hover:before {
+    height: calc(100% - 32px);
+    top: 16px;
+  }
+  
+  .meSection  button:hover:after {
+    width: calc(100% - 32px);
+    left: 16px;
+  }
+  
+  .meSection button span {
+    font-size: 15px;
+    z-index: 3;
+    position: relative;
+    font-weight: 600;
+  }
+  
+  /* Media Queries for Responsiveness */
+  
+  @media (max-width: 768px) {
+    .meSection h1 {
+      font-size: 2vh; /* Adjust the font size for smaller screens */
+    }
+  
+    .meSection img {
+      height: 40vh; /* Adjust the image height for smaller screens */
+      margin-bottom: 8vh;
+      margin-top: 8vh;
+    }
+  
+    .meSection button {
+      font-size: 20px; /* Adjust the font size for smaller screens */
+      margin-top: 2vh; /* Adjust the button margin for smaller screens */
+    }
+  }
+  
